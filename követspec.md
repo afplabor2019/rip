@@ -1,5 +1,6 @@
 # rip
 
+Követelmény specifikáció alap verziója:
 
  Jelenlegi üzleti folyamatok modellje
 
