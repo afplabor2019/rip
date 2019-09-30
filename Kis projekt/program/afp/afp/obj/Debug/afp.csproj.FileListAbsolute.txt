@@ -1,0 +1,10 @@
+C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\bin\Debug\afp.exe.config
+C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\obj\Debug\afp.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\obj\Debug\afp.Form1.resources
+C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\obj\Debug\afp.Properties.Resources.resources
+C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\obj\Debug\afp.csproj.GenerateResource.Cache
+C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\bin\Debug\afp.exe
+C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\bin\Debug\afp.pdb
+C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\obj\Debug\afp.exe
+C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\obj\Debug\afp.pdb
