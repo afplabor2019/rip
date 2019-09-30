@@ -1,0 +1,178 @@
+﻿0. Vezetői összefoglaló
+
+Ennek a programnak a célja, hogy egy zenészekre és bandákra dedikált szoftverrel egyszerűbbé tegye a felhasználók kapcsolatfelvételét. 
+
+1. A rendszer céljai, és nem céljai
+
+A rendszer célja, hogy egy vagy több hangszeren játszó zenészek könnyebben találják meg azokat a bandákat, akik adott hangszeren játszó zenészt keresnek, illetve ez fordítva is működjön: a bandák is tudjanak hangszer alapján potenciális tagokat keresni. A rendszer célja, hogy a bandát kereső zenészek és a zenészeket kereső bandák rövid referenciáit megjelenítse a következő bekezdésben foglalt korláttal.
+A rendszernek nem célja, hogy jogi támogatást nyújtson a bandáknak és zenészeknek, nem célja továbbá a bandák és zenészek reklámjainak megjelenítése.
+
+2. Jelenlegi helyzet leírása
+
+1. Egy közvetítő oldal szeretné kibővíteni kínálatát, zenészekre specializálva. 
+2. A zenészek az általános közvetítő oldalon találhatnak egymásra, vagyis a keresés nincs zenészekre specializálva.
+3. A megrendelő keresőmotorja fejletlen, ezért a zenészekre szűrés esetén is jelennek meg nem oda tartozó találatok.
+
+3. A vágyálomrendszer leírása
+
+A kliensprogram teremtse meg a zenészek és bandák közötti minél könnyebb kapcsolatfelvételt. A zenész szakma követelményeinek figyelembevételével tartalmazzon a zenészekről és a bandákról minden szükséges információt. Ezen felül létre kell hozni egy olyan felületet, ahol a felhasználók megjeleníthetik a referenciájukat videó vagy hangfelvétel formájában.
+
+4. A rendszerre vonatkozó külsõ megszorítások
+
+A rendszerre vonatkozó külsö megszorítások közé tartoznak az alábbiak:
+	- pályázat
+	- törvények
+	- rendeletek
+	- szabványok és ajanlások
+Tekintsük először a pályázatot. Pályázat elnyerése esetén eleget kell tenni a pályázatban leírt feltételeknek is. Nem elegendő a saját magunk elé kitűzott céldátum, 
+hanem figyelembe kell venni azt is, hogy a pályázat mennyi időre szól és mikor jár le. Mindezek mellett pályázat esetén meghatározottak azok is, hogy a pályázaton 
+elnyert pénzt, a projekt mely részében, a projekt mely elemeire használhatjuk fel.
+Törvény esetében figyelembe kell venni azt a tényt, hogy a projekt mely országon belül készül és mely országban/országokban szeretnék a későbbiekben ezt forgalmazni 
+és használni. A programnak eleget kell tennie az összes forgalmazni kívánt ország törvényeinek. Esetünkben, mivel egy játékos oktatásról van szó, így korhatáros tartalmakat nem tartalmazhat, illetve egyéb olyan ábrákat, szövegeket sem, amelyek a gyermekre káros hatással vannak és befolyásolják őt fejlődésében.
+Ezeken kívül még lehetnek külön erre a célra alkalmazott rendeletek, amelyeket szinten figyelembe kell venni. Mivel Magyarországon készül el a program, így ez estben
+törvényileg a magyar törvénykönyv szabályozásainak is meg kell felelnie illetve, mivel az oktatás témában belül dolgozunk, így esetünkben az oktatási törvényeket is 
+figyelembe kell venni, melyben bizonyos dologokat rendeletekkel szabályoznak.
+Egyes országok területein eltérőek lehetnek a szabványok és mindezek mellett azok is eltérőek, hogy a program, milyen eszközön kerül majd a későbbiekben használatra.
+Ez lehet akár okostelefon, tablet vagy pc. Ezeket szinten figyelembe kell venni, hogy a program kompatibilis legyen minden olyan eszközzel, amelyen majd a későbbiekben ezt használni fogják. Egy oktató nagyobb esellyel fogja pc-ről használni mint egy diák. Ugyanis az oktató feladata a kérdések összeállítása feladatok szerkesztése, mely minden bizonnyal számára sokkal könnyebben fog menni pc-n. Azonban egy diák aki a feladatokat megoldja és csak válaszokat ad, nem feltételenül fogja pc-ről használni. Az ő esetükben nagyobb arányban fent áll a tablet és okostelefon. Éppen ezért szükséges az, hogy minden lehetséges eszköszre megfelelően készüljön el a program.
+Összességét tekintve a gonololatjelek között és kapcsolat van, vagyis mindennek érvényesülnie kell egyszerre. Figyelembe kell venni a pályázati feltételeket,
+a törvényeket és rendeleteket és ügyeli kell a szabványokra. Ha az összes tényező közül bármelyik is hiányzik vagy hibás, akkor a projekt nem megfelelő és nem 
+tökéletes.
+
+5. Jelenlegi üzleti folyamatok modellje
+
+Az alábbi üzleti folyamatmodellt kell átalakítani az Igényelt üzleti folyamatok modellje c. fejezet alapján:
+A jelenlegi üzleti modellben a megrendelő szoftvere minden szakmát ömlesztve jelenít meg. Ez azt jelenti, hogy ha egy pékségnek péksegédre van szüksége, akkor nem tud közvetlenül a péksegédekre szűrni, hanem biztonsági őrök, papok és boldog ministránsok is megjelennek a rekordok között.
+
+6. Igényelt üzleti folyamatok modellje
+
+1. A keresőmotor fejlesztése helyett a megrendelő egy zenészekre dedikált közvetítő szoftvert szeretne létrehozni. (Kliensszoftver)
+2. Egy olyan szoftver fejlesztésére van szükség, amely könnyebbé teszi az egyedül levő zenészek bandakeresését, illetve a hiányos bandák zenészkeresését.
+2. Az ügyfél igényeihez igazodva, a zenészek tulajdonságai jelenjenek meg, ha kell akkor referenciával.
+3. A felhasználók kapcsolatba léphetnek egymással használata során, mely könnyebbé teszi az emberek közti kommunikációt.
+
+7. Követelménylista
+7.1. Funkcionális követelmények:
+	K0: Bejelentkező felület, ami elszeparálja a megjelenő felületet aszerint, hogy a felhasználó zenész vagy banda.
+	K1: A zenész felületen a képernyő bal oldalán jelenjen meg egy táblázat, amely kilistázza az adatbázisban lévő bandák adatait.
+	K2: A banda felületen a képernyő bal oldalán jelenlen meg egy táblázat, amely kilistázza az adatbázisban lévő zenészek adatait.
+	K3: A zenész és a banda felületen is legyen Keresés gomb, amely elindítja a táblázat adatainak listázását.
+	K4: Legyen lehetőség hangszerek alapján való szűrése.
+	K5: A zenész és a banda felületen legyen lehetőség chatelésre, amelyet egy chat ablak biztosít.
+
+7.2 Nem funkcionális követelmények:
+
+
+7.3 Biztonsági követelmények:
+	K12: Titkosítás:
+		A felhasználók jelszavait csak titkosított formában tárolhatja a rendszer.
+
+
+8. Használati esetek
+
+Szereplők:
+	- Diák
+	- Tanár
+
+Diák használati esetei:
+	- Regisztráció: A diák akadálymentesen tud regisztrálni.
+	- Bejelentkezés: A diák be tud jelentkezni, ha már regisztrát.
+	- Tanulás: A diák tud játékosan tanulni, feltévve hogy benn van egy osztályban. Itt tantárgyat tud választani, majd abban feladatokat megoldani.
+	- Statisztikák megnézése
+	- Párbajozás: A diák tud párbajra hívni más diákokat, vagy ha más diák hívta ki párbajra, akkor vele megküzdeni. 
+	
+Tanár használati esetei: 
+	- Regisztráció: A tanár csak licensz segítségével regiszrálhat a rendszerbe.
+	- Bejelentkezés: A tanár be tud jelentkezni, ha már regisztrát.
+	- Osztályok kezelése: A tanár képes osztályokat létrehozni, és ide diákokat meghívni és őket eltávolítani.
+	- Statisztikák megnézése
+	- Leckék kezelése: A tanár képes leckéket létrehozni, módosítani, törölni és ezeket csoportosítani.
+
+Mellékletek: - Használati eset diagramok/Használati eset diagram 01 - Diák felület.png
+			 - Használati eset diagramok/Használati eset diagram 02 - Tanári felület.png
+
+9. Megfeleltetés  - használat eset diagramok és követelményspecifikáció megfeleltetése
+	☑ - Elkészül	? - Nem biztos, hogy release napi funkció	☒ - Nem készül el a release napig
+
+	☑ - Játékok diákok számára (K1, K2, K7 követelmények)
+	☑ - A játékokat tanárok módosíthatják (K3, K4 követelmények)
+	☑ - Diákok számára a játékhoz tartozó statisztika megtekintése (K5 követelmény)
+	☑ - Tanárok számára az egyes játékokhoz tartozó egyéni és átlagos teljesítmény megtekintése (K5 követelmény)
+	? - Jutalomrendszer a diákok számára (K6 követemény)
+	☑ - Automatikusan generált virtuális oklevél a kurzust elvégzőeknek (K8 követelmény)
+	☑ - Gyerekbarát design (sokszínű design, nem túlbonyolított UI) (K10 követelmény)
+	☑ - Webes felület (K10 követelmény)
+	☑ - Androidos felület (K10 követelmény)
+	? - Windowsos felület (K10 követelmény)
+	☑ - Online ranglista az összes diák eredményei szerint (K9 követelmény)
+
+
+10. Képernyőtervek
+
+11. Forgatókönyvek:
+ A szoftver futtatása közben három szereplõ figyelhetõ meg.
+
+- Az első maga a kliens (ami lehet akár android, akár web alapú), ezen keresztül tudja a felhasználó használni, és élvezni az általunk készítendõ rendszert.
+ Regisztráció, majd bejelentkezés után kiválaszthatjuk, hogy melyik játékot szeretnénk elindítani.
+ A játékmód kiválasztása után megjelennek az adott játékhoz tartozó UI elemek, 
+például lehet ez egy timer, vagy a játékos álatal még felhasználható segítségek száma, és az adott feladat részei.
+- A második szereplõ a már elõzõekben említett játékos, akinek a teszt kitöltése a feladata, a megadott szabályok szerint.
+ Ilyen szabály lehet, például, hogy ne lépje túl a megadott idõkeretet, vagy ne hibázhat X alkalomnál többször.
+- A harmadik szereplõ a Web-service, ez felel azért, hogy a felhasználó által küldött adatokat el tudjuk tárolni, illetve a már elkészült teszteket, és játékokhoz szükséges adatokat a kliensekhez tudjuk eljuttatni.
+
+12. Funkció - követelmény megfeleltetés
+
+F1: Letisztult, családbarát design:
+	A k10-es követelményre épül az egész alkalmazás design tehát ez bír a legmagasabb priorítással (10/10),
+ebben a pontban meghatározott felületekből a web és az android mindeféleképpen megvalósításra kerül viszont windowsos felületre az alkalmazás csak az 1.1-es update után lesz elérhető!	
+
+F2: Jogkörök:
+	A K3 és K4 követelmény adja a lelkét a programnak, így ez is release napi funkció. 
+A jogkörök részletezve vannak a vágyálomrendszerben, megtekinthetők vizuálisan a "Login - reg" című képernyőterven,
+ a "Diák 01 Tanulás" c. képernyőterven és a "Tanár 01 Leckék" illetve a "Tanár 03 Osztályok" képernyőtervben. 10/10
+
+F3: Memóriajáték:
+	A K1 követelmény a megjelenés napján elérhető lesz, hiszen ez a legprimitívebb játékok egyike. 
+A játék során geometriai alakok lesznek a kártyákon, minden egyes alak duplikáltan lesz az asztalon, 
+így csak meg kell találni a párját, illetve a nehézséggel a kártyák száma is nő ugyan arra az időre. 9/10
+
+F4: Párkereső játék:
+	A K2 követelmény szintén megjelenés napi funkcionalitás,
+ a játékmenet során két halmaz fog feltűnni a felhasználó előtt: az mindkettőben össze lesznek keverve a fogalmak, illetve egyenletek,
+ a másikban pedig definíciók és egyenlet eredmények. Két egymás melletti dobozba lehet behúzni ezeket a párokat,
+ és ha az egyenlethez jó eredményt, illetve a fogalomhoz jó definíciót párosítottunk, zöldre váltanak a dobozok. Időre futnak a körök,
+ egy kör akkor ér véget, ha minden doboz zöldre váltott. 8/10
+	
+F5: Jutalmazás:	
+	a K6-os követelménynek megfelelően a diákokat a teljesítményüknek megfelelően jutalmazzuk 7/10 priorítású.
+
+F6: Virtuális "oklevél":
+	A k8-as követelmény szintén 7/10-es priorítású ez azért fontos, hogy visszajelzést tudjunk adni a felhaszálónak a kurzus befejeztével!
+
+F7: Statisztika:
+	A K5 követelmény implementálásra kerül mind diák, mint tanári szemszögből. 
+A diákok megtekinthetik egyes játékokban elért eredményeit és statisztikát (lsd. "Diák 02 Statisztika" képernyőterv), illetve a tanárok az egyéni illetve egész osztályos eredményeket megtekinthetik (lsd. "Tanár 02 Statisztika" képernyőterv) 6/10
+
+F8: Online ranglista:
+	A k9-es követelmény 5/10-es priorítású a diákok itt láthatják, hogy közösségi szinten mekkora tudással rendelkeznek!
+	
+F9: Párbaj:
+	A k7-es követelmény 2/10-es priorítású ennek köszönhetően tudják összemérni a játékosok a tudásukat,ezen a felületen képesek vagyunk kihívni más játékosokat, választhatunk tantárgyakat, témákat. Megvalósítása opcionális!
+
+
+13. fejezet
+
+Fogalomszótár:
+--------------
+
+	-[bug]: fejlesztési hiba ami által a program nem a várt eredményt hozza 
+	-[main menu]: A fõ menü, amely a weboldal/program indulásakor megjelenik(oktatói, tanulói felület kiválasztása)
+	-[games]: Az játékoknak a listája amibõl választhatunk.
+	-[gameboard]: Játék közben, a különbözõ elemeket tartalmazó felület
+	-[backend]: A kiszolgáló, ahonnan az alkalmazást el lehet érni 
+	-[frontend]:  egy réteg ami feladata a rendszerbõl kijutó adatok prezentálása, illetve a bejövõ adatok fogadása
+	-[web-service]:különbözõ programnyelveken írt és különbözõ platformokon futó szoftveralkalmazások interneten keresztül történõ adatcseréjére használt webszolgáltatások.
+	-[oktató felület]: A felhasználónak az átlagosnál magasabb jogai vannak("admin"). 
+	-[tanuló felület]: Csak olyan jogai vannak amit az oktatói felületen meghatároztak.
+	-[statisztika]: A játékokon elért eredmények áttekintése.
+	-[játék aktiválása]: A játék elérhetõvé tétele bizonyos emberek számára.
+	-[játék deaktiválása]: A játék elzárása mindenki elõl.
