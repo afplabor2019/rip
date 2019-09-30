@@ -34,18 +34,22 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Chatbox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox6
             // 
+            this.textBox6.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox6.Location = new System.Drawing.Point(556, 123);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(133, 20);
             this.textBox6.TabIndex = 9;
-            this.textBox6.Text = "Keresés...";
+            this.textBox6.Text = "Keresés";
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.textBox6.Enter += new System.EventHandler(this.textBox6_Enter);
+            this.textBox6.Leave += new System.EventHandler(this.textBox6_Leave);
             // 
             // button1
             // 
@@ -59,7 +63,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(109, 19);
+            this.radioButton1.Location = new System.Drawing.Point(103, 19);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(91, 17);
             this.radioButton1.TabIndex = 0;
@@ -71,7 +75,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(109, 43);
+            this.radioButton2.Location = new System.Drawing.Point(103, 42);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(87, 17);
             this.radioButton2.TabIndex = 1;
@@ -95,23 +99,27 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(13, 13);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(537, 269);
+            this.dataGridView1.Size = new System.Drawing.Size(510, 281);
             this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // textBox1
+            // Chatbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(621, 315);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 20);
-            this.textBox1.TabIndex = 13;
-            this.textBox1.Text = "Chatbox lesz majd";
+            this.Chatbox.Location = new System.Drawing.Point(609, 315);
+            this.Chatbox.Name = "Chatbox";
+            this.Chatbox.Size = new System.Drawing.Size(171, 20);
+            this.Chatbox.TabIndex = 13;
+            this.Chatbox.Text = "Chatbox";
+            this.Chatbox.TextChanged += new System.EventHandler(this.Chatbox_TextChanged);
+            this.Chatbox.Enter += new System.EventHandler(this.Chatbox_Enter);
+            this.Chatbox.Leave += new System.EventHandler(this.Chatbox_Leave);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(935, 436);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Chatbox);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
@@ -134,7 +142,7 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Chatbox;
     }
 }
 
