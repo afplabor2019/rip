@@ -15,7 +15,7 @@ namespace afp
 
             OracleConnection connection = new OracleConnection();
 
-            string connectionString = @"Data Source=127.0.0.1;";
+            string connectionString = @"Data Source=193.225.33.71; User Id=RE1D25; Password=szelektcsillag";
             connection.ConnectionString = connectionString;
 
             return connection;

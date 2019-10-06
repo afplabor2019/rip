@@ -8,3 +8,5 @@ C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\bin\Debug\afp.pdb
 C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\bin\Debug\Oracle.ManagedDataAccess.dll
 C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\obj\Debug\afp.exe
 C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\obj\Debug\afp.pdb
+C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\bin\Debug\Database1.mdf
+C:\Users\Alex\Desktop\A_Molnár_Alex\afp\afp\bin\Debug\Database1_log.ldf
