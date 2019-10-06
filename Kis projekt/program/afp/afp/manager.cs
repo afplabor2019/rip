@@ -9,12 +9,12 @@ namespace afp
 {
     class manager : OracleDatabaseConnection
     {
-        public List<musicans> Select()
+        public List<musicans> GetMusicans()
         {
             List<musicans> records = new List<musicans>();
             OracleCommand command = new OracleCommand();
             command.CommandType = System.Data.CommandType.Text;
-            command.CommandText = "SELECT* FROM RIPAFPLABPR";
+            command.CommandText = "SELECT * FROM zenesz";
             OracleConnection connection = getConnection();
             connection.Open();
             command.Connection= connection;
@@ -25,12 +25,31 @@ namespace afp
                 newmusican.Id = int.Parse(reader["id"].ToString());
                 newmusican.Name = (string)reader["zenesznev"];
                 newmusican.Lakcim = (string)reader["lakcim"];
-                newmusican.Name = (string)reader["elerhetőség"];
+                newmusican.Elerhetoseg = (string)reader["elerhetőség"];
                 records.Add(newmusican);
 
             }
             connection.Close();
             return records;
         }
+
+        //TO-DO 
+        //NEED TO IMPLEMENT ALL NOT IMPLEMENTED DATABASE FUNCTIONS
+
+        public List<musicans> SetMusicans()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<bands> GetBands()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<bands> SetBands()
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
