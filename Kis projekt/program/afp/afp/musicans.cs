@@ -43,7 +43,7 @@ namespace afp
                     throw new ArgumentNullException("A személy lakcíme nem lehet null");
                 if (value == String.Empty)
                     throw new ArgumentOutOfRangeException("A személy lakcíme nem lehet üres");
-                name = value;
+                lakcim = value;
             }
             get { return lakcim; }
 
@@ -56,7 +56,7 @@ namespace afp
                     throw new ArgumentNullException("A személy elérhetősége nem lehet null");
                 if (value == String.Empty)
                     throw new ArgumentOutOfRangeException("A személy elérhetősége nem lehet üres");
-                name = value;
+                elerhetoseg = value;
             }
             get { return elerhetoseg; }
         }
