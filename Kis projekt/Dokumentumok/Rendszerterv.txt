@@ -1,4 +1,6 @@
-Rendszerterv - "KIS projekt"
+Rendszerterv 
+
+--"KIS projekt"--
 
 I. A rendszer célja
 
