@@ -1,0 +1,130 @@
+Rendszerterv - "KIS projekt"
+
+I. A rendszer célja
+
+A rendszer célja, hogy egy vagy több hangszeren játszó zenészek könnyebben találják meg azokat a bandákat, 
+akik adott hangszeren játszó zenészt keresnek, illetve ez fordítva is működjön: a bandák is tudjanak hangszer alapján potenciális tagokat
+keresni. A rendszer célja, hogy a bandát kereső zenészek és a zenészeket kereső bandák rövid referenciáit megjelenítse a következő bekezdésben
+foglalt korláttal. A rendszernek nem célja, hogy jogi támogatást nyújtson a bandáknak és zenészeknek, nem célja továbbá a bandák és zenészek
+reklámjainak megjelenítése.
+
+II. Projektterv
+
+Dátum		Tevékenység							Résztvevő(k)
+
+2019.09.09. 			Adatbázis terv áttekintése és véglegesítése		
+2019.10.07.				Dokumentációk elkészítése és véglegesítése
+2019.10.14.				Fejlesztése megkezdése
+2019.11.25-2019.12.02.	Unit tesztek
+2019.12.02.				Alpha teszt
+2020.01.16.				Béta teszt
+2020.02.13.				Projekt átadása						A projektben résztvevő összes szereplő
+
+III. Üzleti folyamatok modellje
+
+Üzleti szereplõk:
+	-Zenész
+	-Bandák / Társulatok (a zenészek alkotják)
+
+Támogatandó üzleti folyamatok
+	-Keresési feltételeknek megfelő bandák vagy zenészek rangsorolása
+	-Kommunikáció a rendszer különbőző felhasználói között
+	-Zenészek kategorzálása az ügyfél paraméterei álltal
+
+Üzleti folyamatok leírása (bemenetek, kimenetek, szereplõk)
+
+Keresési feltételeknek megfelő bandák rangsorolása: Szerplők: Zenész, Bandák / Társulatok
+A keresési algoritmus feltételeinek megfeleő zenészeket és (vagy) bandákat a megjelölt távolság (település, lakhely, stb) alapján rangsorolja. Az így kapott eredmények között a felhasználó 
+
+Kommunikáció a rendszer különbőző felhasználói között:  Zenész, Bandák / Társulatok
+A felhasználók kapcsolatba léphetnek egymással használata során, mely könnyebbé teszi az emberek közti kommunikációt.
+
+Zenészek kategorzálása az ügyfél paraméterei álltal: Zenész, Bandák / Társulatok
+Egy olyan szoftver fejlesztésére van szükség, amely könnyebbé teszi az egyedül levő zenészek bandakeresését, illetve a hiányos bandák zenészkeresését a különbőző kategóták és paraméterek álltal.
+
+IV. Követelmények
+
+   Funkcionális követelmények:
+	- Alap adatok személyekről:
+		A programnak tartalmaznia kell a személyek adatait: Név, Lakcím, Elérhetőség, Email, Telefonszám
+
+	- Tartalmaznia kell a bandák/zenészek tulajdonságait:
+		Milyen hangszeren játszanak? Milyen tagokat keresnek? Tudnak-e énekelni? stb.
+
+	- Tartalmaznia kell egy privát chatboxot, ahol az emberek tudnak üzenetet küldeni a másik felhasználó számára.
+	- Tartalmaznia kell egy checkboxot, mely jelzi, hogy a zenész valamilyen banda tagja-e vagy sem.
+ 
+   Nem funkcionális követelmények:
+	- Dedikált .NET asztali kliensprogram
+
+   Törvényi előírások:
+	- A hatályban lévő GDPR szabályozásnak meg kell felelnie.	
+
+V. Funkcionális terv
+
+Rendszerszereplők:
+	- Zenész
+	- Admin
+
+Rendszer használati esetek és lefutásaik:
+	Zenész:
+		-Üzenetküldés
+		-Barát hozzáadása
+		-Személyes adatmódosítás
+		-csoport kezelése
+	Admin:
+		-Rendszerüzenetek küldése
+		-Felhasználók kitiltása
+		-Fórum moderálása
+
+VI. Fizikai környezet
+
+A fejlesztés elsődleges egy asztali .NET környeztre írt kliens programra koncentrál a fejlesztés C# nyelven történik Visual Studio fejlesztői környezetben.
+A rendszer működéshez szükséges adatokat a program egy mySql adatbázsiban tárolja. 
+
+VII. Üzleti folyamatok modelje
+Az alábbi üzleti folyamatmodellt kell átalakítani az Igényelt üzleti folyamatok modellje c. fejezet alapján: 
+A jelenlegi üzleti modellben a megrendelő szoftvere minden szakmát ömlesztve jelenít meg. Ez azt jelenti,
+hogy ha egy pékségnek péksegédre van szüksége, akkor nem tud közvetlenül a péksegédekre szűrni, hanem biztonsági őrök, 
+papok és boldog ministránsok is megjelennek a rekordok között. A rendszer nem mutatja meg a keresés találatainál, hogy ők mit keresnek. 
+Például listázza a zenészeket, de nem tudjuk róluk, hogy bandatagok-e vagy éppen bandát keresnek.
+
+VIII. Tesztterv
+I. Unit tesztek
+	A program könnyebb kezelése és a lehető legtöbb hiba elkerülése érdekében fontos, hogy a fejlesztés közben is lehetőleg minden
+	metódusra legyen írva unit test.
+II. Alpha teszt:
+	Az alpha tesztet a fejlesztők végzik, amelyben a rendszer összeomlását próbálják elérni remélhetőleg sikertelenül. Amennyiben 
+	felderítenek egy hibát jelentést írnak róla, majd javítják.
+	Az alpha teszt során külön tesztelni kell a fontosabb funkciókat, mintpedig: Feladatok menedzselése, megoldása, jutalomrendszer, 
+	design letisztultsága. A teszt során a hibák csökkentése az elsődleges cél.
+III. Béta teszt:
+	Az alpha tesztet követően a felhasználók elvégzik a béta tesztet, melynek során a programban maradt súlyosabb hibák felderítésre kerülnek, majd a fejlesztők javítják őket.
+	A teszt során a stabilitás, letisztultság növelése a cél.
+A tesztekről naplót kell készíteni, amely alapján esetleges hibáknál kitölthető a hibajelentő.
+
+IX. Telepítési terv
+
+Fizika telepítési terv:
+
+- Szükség van egy mySQL adatbázis szerverre, amelyre direktbe csatlakozik a kliensprogram.
+- A renszert egy telepíthető .NET kliens program képezni.
+
+
+Szoftver telepítési terv:
+
+- A szoftvert egy letölthető telepítő segítségével lehet installálni .NET 
+keretrendszerel elszerelt elsősorban windows operációs rendszert futtató aztali gépekre.
+  	
+X. Karbantartási terv
+
+A szoftver a jövőben nem igényel nagy karbantartásokat, a szükséges karbantartások az 
+alábbi egységekből állnak:
+
+- Frrisebb verzió telepítés az újabb verziójú installerel történik.
+
+- Az új vertió azonnal tesztelésre kerül, hiba észlelése esetén azoknak javítása.
+
+- Igény esetén új funkciók implementálása.
+ 
+- Igény esetén új feladat típusok implementálása.
