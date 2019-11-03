@@ -22,11 +22,16 @@
 K1: Regisztrációs felület: A programnak lehetővé kell tennie a szerkesztők számára a regisztrációt. Kötelező mezők: Név, email cím.	
 K2: A cikkek adatainak megjelenítése: ki írta és mikor, hányan olvasták.
 K3: Az oldal designjának újragondolása.
-K4: KIEGÉSZÍTENI EGYÉB ÖTLETEKKEL, DE EZT MEG IS KELL VALÓSÍTANI
-K5: 
+K4: Hibabejelentő funkció.
+K5: Login oldal, Error oldal.
+K6: Tag-ek,cimkék: "Sci-fi, history, book",Social media share
+K7: Legördülő menüben kategóriánként való listázás
+K8: Társoldalakra való navigálás.
+Updating in progress
 
 ## 4. Vágyálomrendszer
 
-Az ideális rendszerben az olvasók tudnak bejelentkezés után kommentelni.
-Az olvasó el tudja menteni az elolvasott cikkeit.
-KIEGÉSZÍTENI
+V1:Az ideális rendszerben az olvasók tudnak bejelentkezés után kommentelni.
+V2:Az olvasó el tudja menteni az elolvasott cikkeit.
+V3:Az oldal összekapcsolása a Magyar Távirati Irodával.
+V4:Saját influencer oldal készítésének lehetővé tétele a felhasználó számára
