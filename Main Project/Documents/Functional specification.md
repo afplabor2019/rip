@@ -1,5 +1,5 @@
 0. Vezetői összefoglaló
-4 SOR
+Egy cég szeretné feldobni a hírközlő oldalát. Szeretné teljes mértékben újragondolni a kinézetet, a funkcionalitást, és a mai modern technika segítségével szeretné majd felvértezni az oldalát, hogy elsőként értesülhessenek a felhasználók a különböző kategóriájú hírekről.Szeretné lehetővé tenni a social media share-t, illetve a közvetlen hibabejelentő funkciót, hogy az oldaluk naprakész legyen, hibamentesen és gördülékenyen tudjon működni. Oldalukat teljesen a fehasználók igényei szerint szeretnék fejleszteni.
 
 1. A rendszer céljai, és nem céljai
 A rendszer célja a meglévő oldal rekreálása, modernebbé tétele, interaktívabbá, és felhasználóbaráttá váljon. A Social media platformok összekapcsolása az oldallal, szerkeszthetőség, illetve áttekinthetőbbé tétele.
@@ -36,8 +36,11 @@ A rendszerre vonatkozó külsö megszorítások közé tartoznak az alábbiak: -
 K1: Regisztrációs felület: A programnak lehetővé kell tennie a szerkesztők számára a regisztrációt. Kötelező mezők: Név, email cím.	
 K2: A cikkek adatainak megjelenítése: ki írta és mikor, hányan olvasták.
 K3: Az oldal designjának újragondolása.
-K4: KIEGÉSZÍTENI EGYÉB ÖTLETEKKEL, DE EZT MEG IS KELL VALÓSÍTANI
-K5: 
+K4: Hibabejelentő funkció.
+K5: Login oldal, Error oldal.
+K6: Tag-ek,cimkék: "Sci-fi, history, book",Social media share
+K7: Legördülő menüben kategóriánként való listázás
+K8: Társoldalakra való navigálás. 
 
 Szereplők: - Felhasználó, vendég, szerkesztő
 
