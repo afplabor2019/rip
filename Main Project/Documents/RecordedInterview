@@ -1,0 +1,67 @@
+                                                      Eszterházy Károly Egyetem
+                                                      3300 Eger Eszterházy tér 1.
+                                                      Természettudományi Kar
+                                                      Programtervező informatikus BSC
+                                                      Alkalmazások Fejlesztése Projekt Labor I.
+
+
+                                                      J e g y z ő k ö n y v  
+
+
+                                                      Alkalmazások fejlesztése projekt labor
+                                                      MAIN PROJECT igényfelmérés, megrendelés
+
+
+Készült: 
+2019/2020/1 szemeszterben az RIP csapat igényfelmérésén az Eszterházy Károly Egyetem Természettudományi Karának épületében (3300 Eger, Leányka út 4., "C" épület)
+
+Jelen vannak:   	Répás Kristóf Tamás AFP.3 hallgató
+                  Burus Bence AFP.3 hallgató
+	                Kiss Milán AFP.1 hallgató
+			            Tolvaj Balázs AFP.1 hallgató
+			            Molnár Alex AFP.1 hallgató, jegyzőkönyvvezető 
+			            XYZ Cég képviselete 5 fő
+
+
+Répás Kristóf Tamás AFP 3. hallgató:
+
+Tisztelettel köszöntök mindenkit!
+Vezérigazgató-úr keresett meg minket mi szerint, Önök szeretnék a hírközlő oldalukat tovább fejleszteni, modernebbé tenni. 
+Megkérném az Önök kiválasztott képviselőjét, tartsa meg a beszámolóját.
+
+
+Kis István megbízott képviselő:
+
+Tisztelettel köszöntöm Önöket.
+Cégünk egy leharcolt, idejét múlt hírközlő oldal tulajdonosa. 
+A vezetés szeretné ezt az oldalt modernebbé, felhasználó-baráttá tenni, mely naprakész híreket közöl, illetve újdonságként a maguk a felhasználók is lehessenek szerkesztők, ők is tudjanak cikket írni. Modernné tételként szeretnénk például, hogy Social Media Platformon meglehessen osztani a cikkeket. Továbbá szeretnénk közvetlen hibabejelentő funkciót, mely az admin email címére közvetlen küldi a hiba leírását, melyek a felhasználóktól származnak.
+A vezetőség készített Önöknek egy listát melyet át is adnék Önöknek. 
+Ezen a vezetőség az első körben megvalósítani kívánt funkciókat közli.
+
+K1: Regisztrációs felület: A programnak lehetővé kell tennie a szerkesztők számára a regisztrációt. Kötelező mezők: Név, email cím.	
+K2: A cikkek adatainak megjelenítése: ki írta és mikor, hányan olvasták.
+K3: Az oldal designjának újragondolása.
+K4: Hibabejelentő funkció.
+K5: Login oldal, Error oldal.
+K6: Tag-ek,cimkék: "Sci-fi, history, book",Social media share
+K7: Legördülő menüben kategóriánként való listázás
+K8: Társoldalakra való navigálás.
+
+Burus Bence AFP 3. hallgató:
+
+Köszönjük szépen a beszámolót, ez a lista megkönnyíti a dolgunkat.
+Van a Követelmény Specifikációnak egy olyan szakasza, hogy Vágyálom rendszer. 
+Tudnának olyan kívánságokat mondani, amelyet jó volna hogyha megvalósítanánk?
+
+Kis István megbízott képviselő:
+
+Szeretnénk rendszerben az olvasók tudnak bejelentkezés után kommentelni. 
+Továbbá, hogy az olvasó el tudja menteni az elolvasott cikkeit. Illetve az oldal összekapcsolása a Magyar Távirati Irodával, hogy elsőként tudjuk a friss híreket(rss). Prémium lehetőség a felhasználók számára a saját influencer oldal készítésének lehetővé tétele.
+
+Molnár Alex AFP.1 hallgató:
+
+Szeretnék javasolni pár dolgot: A regisztráció és a bejelentkezés egy külön ablakban legyen, akár pop-up is lehet. 
+Az MTI pedig regisztráció alapján működik, bárki számára elérhető. Bejelentkezéshez pedig javasolnék egy ERROR oldalt, hogy a felhasználó tudja, hogy valamit elrontott. 
+
+Kis István megbízott képviselő:
+Semmi akadálya, ezeket már magukra bízzuk. Köszönjük szépen hogy itt voltak. Jó munkát kívánunk.
