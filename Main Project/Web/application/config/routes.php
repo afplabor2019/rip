@@ -10,3 +10,6 @@ $route['login'] = 'auth';
 
 $route['logout'] = 'auth/logout';
 
+$route['news'] = 'news';
+
+$route['news/article/(:any)'] = 'news/article/$1';

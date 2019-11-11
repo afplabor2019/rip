@@ -1,9 +1,11 @@
 <html>
 <body>
-<h1>oi</h1>
+<h1><?=($items[0]['title']);?></h1>
+<p><?=($items[0]['body']);?></p>
+<p><?=($items[0]['create_at']);?></p>
+<p><?=($items[0]['created_by']);?></p>
 <?php
-var_dump($items);
-
+//var_dump($items);
 ?>
 </body>
 </html>
