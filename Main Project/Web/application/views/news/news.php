@@ -2,8 +2,8 @@
 <body>
 <h1><?=($items[0]['title']);?></h1>
 <p><?=($items[0]['body']);?></p>
-<p><?=($items[0]['create_at']);?></p>
-<p><?=($items[0]['created_by']);?></p>
+<p><?=($items[0]['created_at']);?></p>
+<p><?=($items[0]['writer']);?></p>
 <?php
 //var_dump($items);
 ?>
