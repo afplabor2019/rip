@@ -23,6 +23,13 @@ class News_model extends CI_Model{
         $query = $this->db->get();
         return $query->result_array();
     }
+    public function deletenews($slug)
+    {
+        $this->load->database();
+        $this->db-->where('id',$slug);
+        $this->db->delete('news');
+        return true;
+    }
 
     /* TODO
 

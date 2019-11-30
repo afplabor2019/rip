@@ -33,6 +33,17 @@ class News extends CI_Controller {
         }
     }
 
+     public function delete()
+    {
+        $this->load->model('News_model');
+        $id-$this->input->get('id');
+        if($this->News_model->deletenews($slug))
+        {
+            $this->load->view('news',$data);
+        }
+
+    }
+
     /* TODO 
     
         implement adding article
