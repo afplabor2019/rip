@@ -1,2 +1,89 @@
 0. Executive Summary
-Customer would like to rethink and redesign its news portal.
+Customer would like to rethink and redesign its news portal. They would like to implement the newest technologies to make their response time much faster than other actors on the media market. They would like to notify their users quickly about news in various categories. They would like to have social media share feature and direct bug reporting system in order to keep their pages up to date, to run smoothly. They would like to improve their site completely to the needs of their users.
+
+1. Targets
+Remake the whole system, make it modern, interactive and userfriendly. There would be a connection between the site and social media platforms (like Facebook, Twitter, Instagram etc.).
+
+2. Current situation
+Customer wants:
+1. to rethink its website's functionality and design.
+2. to make public, who, when wrote the article and how many people read it.
+3. to make possible the registration and login for the editors.
+4. to make possible writing comments after log in for readers.
+5. to get defense from SQL injection in the new comment system.
+6. to filter comments which contains vulgar expressions.
+
+3. Dream System
+D1: In the ideal system readers can comment after valid login.
+D2: The readers can save read articles.
+D3: There must be a connection between the website and the Hungarian Telegraphic Office (MTI).
+D4: There must be a system, where the readers can make their own influencer site.
+
+4. External constraints of the system
+
+
+
+5. Current business model
+1. Customer's website is badly optimized.
+2. Details of the news are not public.
+3. The readers do not have an option to sign up or log in.
+4. The readers do not have an option to write comments.
+5. The URL address is not clear.
+
+6. Requested business model
+Customer wants:
+1. to rethink its website's functionality and design.
+2. to make public, who, when wrote the article and how many people read it.
+3. to make possible the registration and login for the editors.
+4. to make possible writing comments after log in for readers.
+5. to get defense from SQL injection in the new comment system.
+6. to filter comments which contains vulgar expressions.
+
+7. Requirement list
+R1: Registration page: program must make possible the registration for editors. Required data: name, e-mail address
+R2: show details of articles: who and when wrote it, how many people read it.
+R3: rethink the website's design.
+R4: bug report system
+R5: Login page, Error page
+R6: Tags, labels: "Sci-fi, history, book", Social media share
+R7: Drop-down menu: list articles by category/tags
+R8: There must be navigation function to the partner sites.
+
+8. Actors: user, guest, editor
+
+User - Use cases: he/she can sign up, sign in after sign up. He/she can send a direct e-mail to the admin. He/she can send a direct e-mail to the editors if he/she found obscene or incorrect terms.
+Editor - Use cases: he/she can sign up, sign in after sign up. He/she can write, modify and delete articles. He/she can send a direct em-ail to the admin. 
+Admin - Use cases: maintenance, add new editors to the system
+Guest - Use cases: he/she can only read, he/she can't comment, modify, create or delete anything.
+
+9. Matching Requirement Specification
+☑ - Get Ready	? - Not necessarily release daily function	☒ - Not ready for release day
+
+☑ - Registration
+☑ - Login
+☑ - Guest interface
+☑ - Admin interface
+☑ - Database upload with dummy data
+☑ - Main Page
+☑ - Article Page
+
+? - Article editing page
+
+☒  - Password encryption
+☒  - Search function
+☒  - User functions like comment and like
+
+10. Screen plans
+
+11. Scenarios
+User: visit the page and check the newest news. He/she can open a chosen article and he/she can comment anbd like according to dream system
+Editor: he/she can upload, delete and modify articles
+Admin: he/she is responsible for the rights of the users, and the system maintenance
+
+12. Dictionary definitions
+-[bug]: the program does not return the appropriate value or answer
+-[backend]: the server from which the application can be accessed
+-[frontend]: a layer that is used to present the data that is being output from the system and to receive incoming data
+-[web-service]: programs for exchanging data between software applications, implemented in different programming languages and running on different platforms over the Internet
+-[user interface]: user has the ability to publish and modify articles
+-[admin interface]: admin can moderate and modify the settings of the system

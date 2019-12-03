@@ -1,5 +1,5 @@
 0. Vezetői összefoglaló
-Egy cég szeretné feldobni a hírközlő oldalát. Szeretné teljes mértékben újragondolni a kinézetet, a funkcionalitást, és a mai modern technika segítségével szeretné majd felvértezni az oldalát, hogy elsőként értesülhessenek a felhasználók a különböző kategóriájú hírekről.Szeretné lehetővé tenni a social media share-t, illetve a közvetlen hibabejelentő funkciót, hogy az oldaluk naprakész legyen, hibamentesen és gördülékenyen tudjon működni. Oldalukat teljesen a fehasználók igényei szerint szeretnék fejleszteni.
+Egy cég szeretné feldobni a hírközlő oldalát. Szeretné teljes mértékben újragondolni a kinézetet, a funkcionalitást, és a mai modern technika segítségével szeretné majd felvértezni az oldalát, hogy elsőként értesülhessenek a felhasználók a különböző kategóriájú hírekről. Szeretné lehetővé tenni a social media share-t, illetve a közvetlen hibabejelentő funkciót, hogy az oldaluk naprakész legyen, hibamentesen és gördülékenyen tudjon működni. Oldalukat teljesen a fehasználók igényei szerint szeretnék fejleszteni.
 
 1. A rendszer céljai, és nem céljai
 A rendszer célja a meglévő oldal rekreálása, modernebbé tétele, interaktívabbá, és felhasználóbaráttá váljon. A Social media platformok összekapcsolása az oldallal, szerkeszthetőség, illetve áttekinthetőbbé tétele.
@@ -42,9 +42,9 @@ K6: Tag-ek,cimkék: "Sci-fi, history, book",Social media share
 K7: Legördülő menüben kategóriánként való listázás
 K8: Társoldalakra való navigálás. 
 
-Szereplők: - Felhasználó, vendég, szerkesztő
+8. Szereplők: - Felhasználó, vendég, szerkesztő
 
-Felhasználó használati esetei: - Regisztráció: A felhasználó tud regisztrálni. - Bejelentkezés: A felhasználó be tud jelentkezni, ha már regisztrált. - A szerkesztő képes cikket/cikkeket írni és módosítani.  - A felhasználó közvetlen email-t küldhet az adminoknak hiba esetén. - Jelentést tehet közvetlen emailen keresztül az adminok felé, helytelen, obszcén kifejezések észlelésekor, felülvizsgálatra. - Kommentelni képes, véleményt képes formálni az adott cikkről.
+Felhasználó használati esetei: - Regisztráció: A felhasználó tud regisztrálni. - Bejelentkezés: A felhasználó be tud jelentkezni, ha már regisztrált. - A felhasználó közvetlen email-t küldhet az adminoknak hiba esetén. - Jelentést tehet közvetlen emailen keresztül az szerkesztők felé, helytelen, obszcén kifejezések észlelésekor, felülvizsgálatra. - Kommentelni képes, véleményt képes formálni az adott cikkről.
 
 Szerkesztő használatai esetei: A szerkesztő tud regisztrálni. - Bejelentkezés: A szerkesztő be tud jelentkezni, ha már regisztrált. - A szerkesztő képes cikket/cikkeket írni és módosítani.  - A szerkesztő közvetlen email-t küldhet az adminoknak hiba esetén.
 
@@ -79,7 +79,7 @@ Admin: az oldal felhasználóinak jogköreiért, az oldal működésért felel. 
 KIEGÉSZÍTENI: OLYAN SZINTEN LE KELLENE ÍRNI, HOGY MIKOR HOVA KATTINT, LÉPÉSRŐL LÉPÉSRE HOGYAN NYIT MEG A FELHASZNÁLÓ EGY CIKKET, VAGY A SZERKESZTŐ HOGYAN TÖLT FEL EGY CIKKET.
 FOLYAMATLEÍRÁS SZÖVEGESEN VAGY ÁBRÁVAL
 
-13. fejezet
+12. fejezet
 Fogalomszótár:
 -[bug]: fejlesztési hiba ami által a program nem a várt eredményt hozza 
 -[backend]: A kiszolgáló, ahonnan az alkalmazást el lehet érni 

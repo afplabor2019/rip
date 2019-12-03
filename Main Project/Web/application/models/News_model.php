@@ -8,18 +8,18 @@ class News_model extends CI_Model{
     }
     
     public function get_news(){
-        $this->db->select('title, body, create_at,  created_by');
-        $this->db->from('article');
-        $this->db->where('active = 1');
+       //SELECT title,body, create_at, CONCAT(first_name,' ', last_name) as name FROM users as u,article as a WHERE a.active = 1 AND u.id = a.created_by
+        $this->db->select('title, body, created_at,  CONCAT(first_name,\' \', last_name) as writer');
+        $this->db->from('users as u,article as a');
+        $this->db->where('a.active = 1 AND u.id = a.created_by');
         $query = $this->db->get();
         return $query->result_array();
     }
 
     public function get_article($slug){
-        $this->db->select('title, body, create_at,  created_by');
-        $this->db->from('article');
-        $array = array('active' => 1, 'slug' => $slug);
-        $this->db->where($array);
+        $this->db->select('title, body, created_at,  CONCAT(first_name,\' \', last_name) as writer');
+        $this->db->from('users as u,article as a');
+        $this->db->where('a.active = 1 AND u.id = a.created_by AND a.slug = \''.$slug.'\'');
         $query = $this->db->get();
         return $query->result_array();
     }
