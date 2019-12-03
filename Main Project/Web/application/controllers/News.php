@@ -29,19 +29,71 @@ class News extends CI_Controller {
         }
         else {
             $data['items'] = $item;
-            $this->load->view('news/article',$data);
+            $this->load->template('news/article/article',$data);
         }
     }
 
-     public function delete()
+     public function delete($slug)
     {
-        $this->load->model('News_model');
-        $id-$this->input->get('id');
-        if($this->News_model->deletenews($slug))
-        {
-            $this->load->view('news',$data);
-        }
+        if($slug == NULL){show_404();}
+        
+        $article = $this->news_model-> get_article($slug);
+        if(empty($article)){show_404();}
+        $data = $article[0];
+        $data['slug'] = $slug;
 
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('confirm', 'confirm' ,'required');
+
+        if($this->form_validation->run() == FALSE){
+            $this->load->template('news/article/delete',$data);
+       }
+       else{
+        $this->news_model->delete_news($slug);
+          redirect('/news','refresh');
+       }
+    }
+
+    public function add(){
+       
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('title','Title','required');
+        $this->form_validation->set_rules('body','Body','required');
+        
+        if($this->form_validation->run() == FALSE){
+             $this->load->template('news/article/add');
+        }
+        else{
+           $this->news_model->add();
+           redirect('/news','refresh');
+        }
+    }
+
+    public function edit($slug){
+        if($slug == NULL){show_404();}
+        
+        $article = $this->news_model-> get_article($slug);
+        if(empty($article)){show_404();}
+        $data = $article[0];
+        $data['slug'] = $slug;
+
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('title','Title','required');
+        $this->form_validation->set_rules('body','Body','required');
+        
+        if($this->form_validation->run() == FALSE){
+             $this->load->template('news/article/edit',$data);
+        }
+        else{
+           $this->news_model->edit($data);
+           redirect('/news','refresh');
+        }
     }
 
     /* TODO 

@@ -23,17 +23,49 @@ class News_model extends CI_Model{
         $query = $this->db->get();
         return $query->result_array();
     }
-    public function deletenews($slug)
+    
+    public function delete_news($slug)
     {
-        $this->load->database();
-        $this->db-->where('id',$slug);
-        $this->db->delete('news');
-        return true;
+        $this->db->set('active', 0);
+        $this->db->where('slug', $slug);
+        return $this->db->update('article');
     }
 
-    /* TODO
+   
+    public function add(){
+        $this->load->helper('url');
+        $this->load->helper('text');
+        $data = array(
+            'title' => $this->input->post('title'),
+            'slug'  => url_title(
+                            convert_accented_characters($this->input->post('title')),
+                            'dash',
+                            TRUE
+                        ),
+            'body'  => $this->input->post('body'),
+            'created_by'  => 1//$this->ion_auth->get_user_id()
+        );
+        
+        return $this->db->insert('article',$data);
+    }
 
-        edit querry so created_by will show the author not its id.
-    
-    */
+    public function edit($article)
+    {
+        $this->db->set('title', $this->input->post('title'));
+        $this->db->set('body',  $this->input->post('body'));
+        $this->db->where('slug', $article['slug']);
+        $this->db->update('article');
+
+        $this->load->helper('url');
+        $this->load->helper('text');
+        $slug = url_title(
+            convert_accented_characters($this->input->post('title')),
+            'dash',
+            TRUE
+        );
+        $this->db->set('slug', $slug);
+        $this->db->where('title', $this->input->post('title'));
+
+        return $this->db->update('article');
+    }  
 }

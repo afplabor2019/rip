@@ -12,4 +12,11 @@ $route['logout'] = 'auth/logout';
 
 $route['news'] = 'news';
 
+$route['news/article/(:any)/delete'] = 'news/delete/$1';
+
 $route['news/article/(:any)'] = 'news/article/$1';
+
+$route['news/add'] = 'news/add';
+
+$route['news/edit/(:any)'] ='news/edit/$1';
+
