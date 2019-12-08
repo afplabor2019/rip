@@ -1,3 +1,7 @@
+<head>
+<link rel = "stylesheet" type = "text/css" 
+   href = "<?php echo base_url(); ?>style/css/default.css">
+</head>
 <html>
 <body>
 <h1><?=$title?> </h1>

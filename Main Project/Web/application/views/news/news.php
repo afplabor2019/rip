@@ -5,23 +5,26 @@
 <html>
 <body>
     <div id="page" class="container">
-        <div id="content">
-            <div class="title">
-                <h1><?=($items[0]['title']);?></h1>
-            </div>
-            <div class="container">
-                <div id="writer">
-                <p><strong><?=($items[0]['writer']);?></strong></p>
+        <?php foreach ($items as $item): ?>
+            <div id="content">
+                <div class="title">
+                    <h1><?=($item['title']);?></h1>
                 </div>
-                <div id="publication_date">
-                <p><?=($items[0]['created_at']);?> </p>
+                <div class="container">
+                    <div id="writer">
+                    <p><strong><?=($item['writer']);?></strong></p>
+                    </div>
+                    <div id="publication_date">
+                    <p><?=($item['created_at']);?> </p>
+                    </div>
+                </div>
+                <div>
+                    <hr class="border">
+                    <p><?=($item['body']);?></p>
                 </div>
             </div>
-            <div>
-                <hr class="border">
-                <p><?=($items[0]['body']);?></p>
-            </div>
-        </div>
+        <?php endforeach; ?>
+    </div>
 <?php
 //var_dump($items);
 ?>

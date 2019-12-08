@@ -1,5 +1,5 @@
 * {box-sizing: border-box}
-body {padding: 0; margin: 0}
+body {padding: 0; margin: 0;text-align: center;}
 
 a, a:focus, a:active {
     color: inherit;
@@ -23,6 +23,9 @@ input, select {
   margin: 5px;
 }
 
+button{
+  border-radius: 5px;
+}
 
 td {
   border: none;
