@@ -69,7 +69,7 @@ class News extends CI_Controller {
         $data['loggedIn'] = $this->getLoggedIn();
         
         if($this->form_validation->run() == FALSE){
-             $this->load->template('news/article/add');
+             $this->load->template('news/article/add',$data);
         }
         else{
            $this->news_model->add();
