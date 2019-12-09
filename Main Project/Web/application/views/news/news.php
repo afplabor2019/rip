@@ -8,7 +8,7 @@
         <?php foreach ($items as $item): ?>
             <div id="content">
                 <div class="title">
-                    <h1><?=($item['title']);?></h1>
+                    <h1><a href=<?php echo base_url()."index.php/news/article/".$item['slug']?>><?=($item['title']);?></a></h1>
                 </div>
                 <div class="container">
                     <div id="writer">
@@ -23,10 +23,13 @@
                     <p><?=($item['body']);?></p>
                 </div>
             </div>
+            <?php if ($loggedIn === true): ?>
+				<div><a href=<?php echo base_url()."index.php/news/edit/".$item['slug']?>>Edit</a></div>
+                <div><a href=<?php echo base_url()."index.php/news/article/".$item['slug']."/delete"?>>Delete</a></div>
+			<?php endif; ?>
         <?php endforeach; ?>
     </div>
 <?php
-//var_dump($items);
 ?>
 </div>
 </body>
